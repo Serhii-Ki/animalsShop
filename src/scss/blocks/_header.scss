@@ -1,3 +1,136 @@
 .header {
+  height: 100vh;
+  position: relative;
+  color: #fff;
 
+  &-content {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    right: 70px;
+    bottom: 80px;
+    z-index: 9;
+    pointer-events: none;
+
+    @media (min-width: 1200px) {
+      top: 40px;
+      left: 40px;
+      right: 40px;
+      bottom: 60px;
+    }
+
+    @media (min-width: 767px) {
+      top: 30px;
+      left: 5%;
+      right: 5%;
+      bottom: 30px;
+    }
+  }
+}
+
+.header a {
+  color: #fff;
+}
+
+.header-nav {
+  pointer-events: all;
+}
+
+.header-social {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  translate: 0% -50%;
+  pointer-events: all;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (max-height: 600px) {
+    top: 40%;
+  }
+
+  & .social {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    align-items: center;
+
+  }
+}
+
+.header-see_more {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  pointer-events: all;
+
+  & .see-more {
+    position: relative;
+    padding-left: 60px;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    transform-origin: left;
+    rotate: -90deg;
+    translate: 7% 0;
+
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: calc(50% - 1.5px);
+      background-color: rgba(255, 255, 255, 0.6);
+      width: 38px;
+      height: 3px;
+
+    }
+  }
+}
+
+.header-slider_controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: all;
+
+  & .slider-controls {
+    display: grid;
+    gap: 15px;
+
+    &__arrows {
+      display: flex;
+      align-items: center;
+      column-gap: 35px;
+    }
+
+    &__count {
+      display: flex;
+      column-gap: 5px;
+      justify-content: flex-end;
+      align-items: flex-end;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1;
+      text-align: right;
+
+      &-current, .swiper-pagination-current {
+        font-size: 32px;
+        line-height: 0.75;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.header-scroll_bar {
+  pointer-events: all;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  translate: 0% -50%;
+  height: 250px;
+  width: 20px;
+  background-color: blue;
 }

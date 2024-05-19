@@ -8,11 +8,133 @@
   </head>
   <body>
     <header class="header">
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <div class="header-slide">
+        <div class="slide">
+          <div class="slide-header">
+            <div class="slide-tagline">
+              EXPLORE
+            </div>
+            <h1 class="slide-title">
+              <span>Norway</span>
+            </h1>
+          </div>
+
+          <div class="slide-locations">
+
+            <a href="#" class="location">
+              <img src="./src/img/icons/map-marker-line.svg" alt="map marker" class="location-marker">
+              <div class="location-title">
+                Location #1
+              </div>
+              <div class="location-link">
+                Plan a trip
+              </div>
+            </a>
+
+            <a href="#" class="location">
+              <img src="./src/img/icons/map-marker-line.svg" alt="map marker" class="location-marker">
+              <div class="location-title">
+                Location #2
+              </div>
+              <div class="location-link">
+                Plan a trip
+              </div>
+            </a>
+
+            <a href="#" class="location">
+              <img src="./src/img/icons/map-marker-line.svg" alt="map marker" class="location-marker">
+              <div class="location-title">
+                Location #3
+              </div>
+              <div class="location-link">
+                Plan a trip
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
       <div class="header-content">
-        <div class="header-nav"></div>
-        <div class="header-social"></div>
-        <div class="header-see_more"></div>
-        <div class="header-slider_controls"></div>
+        <div class="header-nav">
+          <nav class="nav">
+            <a href="#">
+              <img src="./src/img/icons/Logo.svg" alt="logo" />
+            </a>
+            <div class="nav-list">
+              <ul>
+                <li>
+                  <a href="#">Destinations</a>
+                </li>
+                <li>
+                  <a href="#">Activities</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-nav">
+              <button class="nav-btn">
+                <img src="./src/img/icons/NavBtn.svg" alt="navigation button">
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="header-social">
+
+          <div class="social">
+            <a href="#!"><img src="./src/img/icons/facebook.svg" alt="facebook"></a>
+            <a href="#!"><img src="./src/img/icons/twitter.svg" alt="twitter"></a>
+            <a href="#!"><img src="./src/img/icons/instagram.svg" alt="instagram"></a>
+          </div>
+
+        </div>
+        <div class="header-see_more">
+          <a href="#" class="see-more">SEE MORE</a>
+        </div>
+        <div class="header-slider_controls">
+
+          <div class="slider-controls">
+            <div class="slider-controls__arrows">
+              <button id="sliderPrev">
+                <img src="./src/img/icons/arrow-left.svg" alt="previous">
+              </button>
+              <button id="sliderNext">
+                <img src="./src/img/icons/arrow-right.svg" alt="next">
+              </button>
+            </div>
+            <div class="slider-controls__count">
+              <span class="slider-controls__count-current">01</span>
+              <span class="slider-controls__count-separator">/</span>
+              <span class="slider-controls__count-total">04</span>
+            </div>
+          </div>
+
+        </div>
         <div class="header-scroll_bar"></div>
       </div>
     </header>

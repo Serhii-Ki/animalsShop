@@ -1,11 +1,11 @@
 .swiper {
-  width: 600px;
-  height: 300px;
+
 }
 
 .slide {
   position: relative;
   height: 100vh;
+  width: 100%;
   overflow: hidden;
   padding-bottom: 80px;
   display: flex;
@@ -18,9 +18,7 @@
   //https://cdn.pixabay.com/photo/2017/05/27/22/33/morocco-2349647_1280.jpg
   background: url("https://wallup.net/wp-content/uploads/2016/01/246567-nature-landscape-beach-Australia-sunset-clouds-sea-rock-trees-sky-sand-coast-HDR-long_exposure.jpg") 50% / cover no-repeat,
   radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%),
-  linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-  background-color: #555;
-  background-position: center center;
+  linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 99.99%, rgba(255, 255, 255, 0) 100%) center center/cover no-repeat;
   cursor: grab;
 
   &:active{
@@ -81,6 +79,22 @@
       -webkit-text-fill-color: transparent;
     }
   }
+}
+
+.austria {
+  background-image: url("https://www.supergallery.nl/3127-thickbox_default/hallstatt.jpg");
+}
+
+.uae {
+  background-image: url("https://images.locationscout.net/2017/04/milky-way-al-razeen-united-arab-emirates.jpg?h=1100&q=83");
+}
+
+.thailand {
+  background-image: url("https://www.dronestagr.am/wp-content/uploads/2017/06/Mae-On-Mountain-Sunrise-scaled.jpg");
+}
+
+.morocco {
+  background-image: url("https://cdn.pixabay.com/photo/2017/05/27/22/33/morocco-2349647_1280.jpg");
 }
 
 .slide-locations {
